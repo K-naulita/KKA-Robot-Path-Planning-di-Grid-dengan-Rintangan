@@ -44,9 +44,6 @@ def plot_step(grid, path=[], current=None):
    clear_output(wait=True)
 
 
-# -------------------------------
-# 3. Algoritma IDA* (fbound)
-# -------------------------------
 def ida_star_visual(grid,start,goal):
    def heuristic(a,b):
        return abs(a[0]-b[0])+abs(a[1]-b[1])
@@ -94,3 +91,4 @@ print("Menjalankan IDA*...")
 ida_path,ida_iter,ida_time=ida_star_visual(grid,start,goal)
 print("IDA* selesai. Path:",ida_path)
 print("Iterations:",ida_iter,"Time:",ida_time)
+
